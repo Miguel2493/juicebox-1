@@ -5,6 +5,7 @@ const server = express();
 const apiRouter = require("./api");
 const bodyParser = require('body-parser');
 const { client } = require('./db');
+require('dotenv').config();
 
 client.connect();
 server.use(volleyball);
